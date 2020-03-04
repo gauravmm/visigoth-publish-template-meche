@@ -38,7 +38,7 @@
               <b class="meeting">Meeting:</b>
 %%              if person.role == "host":
 %%                for visitor in event.visitors:
-                    <a href="https://applygrad.cs.cmu.edu/admin/index.php?viewApplication={{ visitor.data.id }}&viewDepartment=1">{{ visitor.name }}</a>
+                    {{ visitor.name }}
 %%                endfor
 %%              else:
 %%                if event.host.custom.website:
